@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Escuela Argentina de Materia Blanda</title>
+    <meta name="description"
+        content="Primera Escuela Argentina de Materia Blanda - Un encuentro académico y formativo de excelencia.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo-text">Es-MaB 1</a>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#programa">Programa</a></li>
+                <li><a href="#docentes">Docentes</a></li>
+                <li><a href="#cronograma">Cronograma</a></li>
+                <li><a href="#inscripcion">Inscripción</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio / Hero -->
+    <header id="inicio" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-title-container">
+                <div class="hero-icons hero-icons-top">
+                    <img src="bicapa.png" alt="Bicapa" class="hero-icon">
+                    <img src="cadena.png" alt="Cadena" class="hero-icon">
+                    <img src="red.png" alt="Red" class="hero-icon">
+                    <img src="micela.png" alt="Micela" class="hero-icon">
+                </div>
+                <h1 class="hero-title">1° Escuela Argentina de Materia Blanda</h1>
+                <div class="hero-bottom-row">
+                    <div class="hero-icons hero-icons-bottom">
+                        <img src="bicapa.png" alt="Bicapa" class="hero-icon">
+                        <img src="cadena.png" alt="Cadena" class="hero-icon">
+                        <img src="red.png" alt="Red" class="hero-icon">
+                        <img src="micela.png" alt="Micela" class="hero-icon">
+                    </div>
+                    <div class="hero-date-location">
+                        <p>La Plata, Argentina</p>
+                        <p>03 - 14 Agosto 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Forma de onda en la parte inferior del hero para un diseño más dinámico -->
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C-1,95.8,11.23,98.63,20.25,98.63c45.39,0,89.56-11.45,133.56-25.13C223.75,54.76,275.52,65.06,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Sobre la Escuela y Dónde -->
+    <section class="about-section">
+        <div class="container two-columns">
+            <div class="about-content box-shadow-card">
+                <h2>Sobre la Escuela</h2>
+                <div class="accent-line"></div>
+                <p>La <strong>Primera Escuela Argentina de Materia Blanda (Es-MaB 1)</strong> es un programa de
+                    capacitación intensiva de alto nivel dirigido a estudiantes avanzados de grado, posgrado e
+                    investigadores jovenes y profesionales en general.</p>
+                <p>El objetivo es proporcionar una capacitación integral en los fundamentos físicoquímicos, métodos
+                    experimentales y herramientas teóricas que sustentan el estudio de los sistemas blandos.
+                    Buscamos consolidar un espacio de intercambio y colaboración que impulse esta área
+                    interdisciplinaria en nuestra región.</p>
+            </div>
+
+            <div class="right-column" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div class="location-content box-shadow-card">
+                    <div class="info-item">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <div>
+                            <strong>Fechas:</strong>
+                            <p>03 - 14 Agosto 2026</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <div>
+                            <strong>Sede:</strong>
+                            <p>Instituto de Investigaciones Fisicoquímicas Teóricas y Aplicadas (INIFTA - UNLP -
+                                CONICET),
+                                La Plata, Argentina.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="inscripcion" class="registration-summary box-shadow-card"
+                    style="padding: 1.5rem 2.5rem; background-color: var(--primary-color); color: var(--text-light);">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.8rem;">
+                            <svg class="icon" style="color: var(--accent-light); width: 24px; height: 24px;" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span style="font-size: 1.1rem; color: var(--text-light);"><strong>Inscripción:</strong>
+                                Abierta</span>
+                        </li>
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.8rem;">
+                            <svg class="icon" style="color: var(--accent-light); width: 24px; height: 24px;" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span style="font-size: 1.1rem; color: var(--text-light);"><strong>Cierre de
+                                    Inscripción:</strong> 10/07</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.8rem;">
+                            <svg class="icon" style="color: var(--accent-light); width: 24px; height: 24px;" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                            <span style="font-size: 1.1rem; color: var(--text-light);"><strong>Cupos:</strong>
+                                Limitados</span>
+                        </li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin-top: -0.5rem;">
+                    <a href="https://forms.gle/FUMQKDmBJF7EuE6s7" class="cta-button w-100" target="_blank"
+                        rel="noopener noreferrer">Ir al Formulario de Inscripción</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programa -->
+    <section id="programa" class="program-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Programa Científico</h2>
+            <div class="accent-line center"></div>
+            <p class="section-subtitle">El programa está organizado en dos semanas de capacitación intensiva, abarcando
+                desde los principios básicos hasta las técnicas más avanzadas.</p>
+
+            <div class="program-grid">
+                <div class="program-card">
+                    <div class="card-icon">1</div>
+                    <h3>Sistemas Autoensamblados</h3>
+                    <p>Micelas, liposomas, cristales líquidos y monocapas. Relaciones estructura-función.</p>
+                </div>
+                <div class="program-card">
+                    <div class="card-icon">2</div>
+                    <h3>Coloides</h3>
+                    <p>Sistemas dispersos, estabilidad coloidal, interacciones superficiales y dinámica browniana.</p>
+                </div>
+                <div class="program-card">
+                    <div class="card-icon">3</div>
+                    <h3>Sistemas Poliméricos</h3>
+                    <p>Propiedades estructurales y dinámicas de macromoléculas; mezclas, copolímeros y geles.</p>
+                </div>
+                <div class="program-card">
+                    <div class="card-icon">4</div>
+                    <h3>Materia Blanda Biológica</h3>
+                    <p>Membranas lipídicas, ADN, proteínas y polisacáridos. Materia blanda en la función biológica.</p>
+                </div>
+                <div class="program-card">
+                    <div class="card-icon">5</div>
+                    <h3>Simulación y Modelado</h3>
+                    <p>Métodos numéricos, dinámica molecular, modelos de grano grueso, enfoques de campo medio.</p>
+                </div>
+                <div class="program-card">
+                    <div class="card-icon">6</div>
+                    <h3>Técnicas de Caracterización</h3>
+                    <p>Dispersión de luz y rayos X, Microscopias electronicas, Reologia, Analisis térmico, entre otras.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Docentes -->
+    <section id="docentes" class="teachers-section">
+        <div class="container">
+            <h2 class="section-title">Plantel Docente</h2>
+            <div class="accent-line center"></div>
+            <h4
+                style="text-align: left; margin-bottom: 1.5rem; color: var(--text-muted); font-size: 1.1rem; letter-spacing: 1px;">
+                DOCENTES CONFIRMADOS</h4>
+            <div class="teachers-grid">
+                <div class="teacher-card box-shadow-card">
+                    <h3>Marcelo Ceolín</h3>
+                    <p>INIFTA, La Plata, Argentina</p>
+                </div>
+                <div class="teacher-card box-shadow-card">
+                    <h3>Agustín Picco</h3>
+                    <p>INIFTA, La Plata, Argentina</p>
+                </div>
+                <div class="teacher-card box-shadow-card">
+                    <h3>Gabriel Longo</h3>
+                    <p>INIFTA, La Plata, Argentina</p>
+                </div>
+                <div class="teacher-card box-shadow-card">
+                    <h3>Waldemar Marmisolle</h3>
+                    <p>INIFTA, La Plata, Argentina</p>
+                </div>
+                <div class="teacher-card box-shadow-card">
+                    <h3>Omar Azzaroni</h3>
+                    <p>INIFTA, La Plata, Argentina</p>
+                </div>
+                <div class="teacher-card box-shadow-card">
+                    <h3>Hernan Ritacco</h3>
+                    <p>IFISUR, Bahia Blanca, Argentina</p>
+                </div>
+                <div class="teacher-card box-shadow-card">
+                    <h3>Marcus Müller</h3>
+                    <p>Georg-August-Universität Göttingen, Alemania</p>
+                </div>
+                <div class="teacher-card box-shadow-card">
+                    <h3>Mario Tagliazucchi</h3>
+                    <p>INQUIMAE, CABA, Argentina</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cronograma -->
+    <section id="cronograma" class="schedule-section">
+        <div class="container">
+            <div style="text-align: center;">
+                <h2 class="section-title" style="display: inline-block; position: relative;">
+                    Cronograma
+                    <span
+                        style="position: absolute; left: 100%; bottom: 0.4rem; margin-left: 1rem; font-size: 1.2rem; font-weight: normal; color: var(--text-muted); white-space: nowrap;">(en
+                        desarrollo)</span>
+                </h2>
+            </div>
+            <div class="accent-line center"></div>
+
+            <div class="schedule-container box-shadow-card">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-time">Semana 1 <span style="font-weight: normal;">(03-07 de agosto)</span>
+                        </div>
+                        <div class="timeline-content">
+                            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-muted);">
+                                <li style="margin-bottom: 0.5rem;">Sistemas Autoensamblados</li>
+                                <li style="margin-bottom: 0.5rem;">Coloides</li>
+                                <li style="margin-bottom: 0.5rem;">Sistemas Poliméricos</li>
+                                <li style="margin-bottom: 0.5rem;">Materia Blanda Biológica</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-time">Semana 2 <span style="font-weight: normal;">(10-14 de agosto)</span>
+                        </div>
+                        <div class="timeline-content">
+                            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-muted);">
+                                <li style="margin-bottom: 0.5rem;">Simulación y Modelado</li>
+                                <li style="margin-bottom: 0.5rem;">Técnicas de Caracterización</li>
+                                <li style="margin-bottom: 0.5rem;">Trabajo Práctico</li>
+                                <li style="margin-bottom: 0.5rem;">Sesión de Pósters</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="accent-line center"></div>
+            <p class="section-subtitle">Si tienes consultas, no dudes en escribirnos.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info box-shadow-card">
+                    <h3>Información de Contacto</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>mab8@inifta.unlp.edu.ar</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="contact-form box-shadow-card">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Tu mensaje..."></textarea>
+                    </div>
+                    <button type="submit" class="cta-button w-100">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Es-MaB 1</h2>
+                    <p>Primera Escuela Argentina de Materia Blanda</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#programa">Programa</a>
+                    <a href="#docentes">Docentes</a>
+                    <a href="#cronograma">Cronograma</a>
+                    <a href="#inscripcion">Inscripción</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Primera Escuela Argentina de Materia Blanda. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

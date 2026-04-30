@@ -528,9 +528,8 @@ section {
 
 /* Contacto */
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-list {

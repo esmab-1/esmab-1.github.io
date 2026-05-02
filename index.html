@@ -28,7 +28,9 @@
     <!-- Navegación -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#inicio" class="logo-text">EsMaB-1</a>
+            <div class="nav-logo-section">
+                <a href="#inicio" class="logo-text">EsMaB-1</a>
+            </div>
             <div class="mobile-menu-toggle" id="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -47,25 +49,28 @@
 
     <!-- Sección Inicio / Hero -->
     <header id="inicio" class="hero-section">
-        <div class="hero-content">
-            <div class="hero-title-container">
-                <div class="hero-icons hero-icons-top">
-                    <img src="bicapa.png" alt="Bicapa" class="hero-icon">
-                    <img src="cadena.png" alt="Cadena" class="hero-icon">
-                    <img src="red.png" alt="Red" class="hero-icon">
-                    <img src="micela.png" alt="Micela" class="hero-icon">
+        <div class="hero-content split-layout">
+            <div class="hero-text-side">
+                <h1 class="hero-title"><span class="font-light">1° Escuela Argentina</span><br>de Materia Blanda</h1>
+                <div class="hero-date-location">
+                    <p>La Plata, Argentina</p>
+                    <p>03 - 14 Agosto 2026</p>
                 </div>
-                <h1 class="hero-title">1° Escuela Argentina de Materia Blanda</h1>
-                <div class="hero-bottom-row">
-                    <div class="hero-icons hero-icons-bottom">
+                <a href="#sobre" class="cta-button">Más info</a>
+            </div>
+            <div class="hero-visual-side">
+                <div class="icon-grid-2x2">
+                    <div class="icon-circle">
                         <img src="bicapa.png" alt="Bicapa" class="hero-icon">
-                        <img src="cadena.png" alt="Cadena" class="hero-icon">
-                        <img src="red.png" alt="Red" class="hero-icon">
-                        <img src="micela.png" alt="Micela" class="hero-icon">
                     </div>
-                    <div class="hero-date-location">
-                        <p>La Plata, Argentina</p>
-                        <p>03 - 14 Agosto 2026</p>
+                    <div class="icon-circle">
+                        <img src="cadena.png" alt="Cadena" class="hero-icon">
+                    </div>
+                    <div class="icon-circle">
+                        <img src="red.png" alt="Red" class="hero-icon">
+                    </div>
+                    <div class="icon-circle">
+                        <img src="micela.png" alt="Micela" class="hero-icon">
                     </div>
                 </div>
             </div>
@@ -82,7 +87,7 @@
     </header>
 
     <!-- Sobre la Escuela y Dónde -->
-    <section class="about-section">
+    <section id="sobre" class="about-section">
         <div class="container two-columns">
             <div class="about-content box-shadow-card">
                 <h2>Sobre la Escuela</h2>
@@ -259,15 +264,14 @@
     <!-- Cronograma -->
     <section id="cronograma" class="schedule-section">
         <div class="container">
-            <h2 class="section-title">
-                    Cronograma <span style="font-size: 1rem; font-weight: normal; color: var(--text-muted);">(en desarrollo)</span>
-            </h2>
+            <h2 class="section-title">Cronograma</h2>
             <div class="accent-line center"></div>
 
-            <div class="schedule-container box-shadow-card">
+            <div class="schedule-container box-shadow-card" style="position: relative;">
+                <span class="status-tag">(en desarrollo)</span>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-time">Semana 1 <span style="font-weight: normal;">(03-07 de agosto)</span>
+                        <div class="timeline-time">Semana 1 <span style="font-weight: normal;">| (03-07 de agosto)</span>
                         </div>
                         <div class="timeline-content">
                             <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-muted);">
@@ -279,7 +283,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-time">Semana 2 <span style="font-weight: normal;">(10-14 de agosto)</span>
+                        <div class="timeline-time">Semana 2 <span style="font-weight: normal;">| (10-14 de agosto)</span>
                         </div>
                         <div class="timeline-content">
                             <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-muted);">

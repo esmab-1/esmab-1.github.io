@@ -95,6 +95,19 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
+/* Estilos para etiquetas de estado */
+.status-tag {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #e57373; /* Rojo suave */
+    background-color: rgba(229, 115, 115, 0.1);
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
 .accent-line.center { margin: 0 auto 1.5rem auto; }
 .accent-line.light { background-color: var(--accent-color); }
 
@@ -156,14 +169,12 @@ a:hover {
     color: var(--primary-color);
 }
 
-/* Navegación */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: #ffffff;
     box-shadow: var(--shadow-sm);
     z-index: 1000;
     transition: var(--transition);
@@ -172,17 +183,36 @@ a:hover {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.nav-logo-section {
+    position: relative;
+    padding: 1rem 4rem 1rem 24px;
+    z-index: 1;
+}
+
+.nav-logo-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    right: 0;
+    bottom: 0;
+    background-color: #0A192F;
+    transform: skewX(-20deg);
+    transform-origin: bottom left;
+    z-index: -1;
+}
+
 .logo-text {
     font-weight: 900;
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: #ffffff;
     letter-spacing: -0.5px;
+    display: block;
 }
 
 .nav-links {
@@ -232,8 +262,8 @@ a:hover {
 /* Hero Section */
 .hero-section {
     position: relative;
-    padding: 5.5rem 0 5rem 0;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 10rem 0 6rem 0;
+    background: linear-gradient(90deg, #0A192F 50%, #172A45 50%);
     color: var(--text-light);
     text-align: center;
     overflow: hidden;
@@ -247,38 +277,32 @@ a:hover {
     padding: 0 24px;
 }
 
-.hero-title-container {
-    display: inline-flex;
-    flex-direction: column;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.hero-icons {
-    display: flex;
-    gap: 0.5rem;
-    margin: 0.8rem 0;
-}
-
-.hero-icons-top {
-    justify-content: flex-end;
-}
-
-.hero-icons-bottom {
-    justify-content: flex-start;
-}
-
-.hero-bottom-row {
-    display: flex;
-    justify-content: space-between;
+.hero-content.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    width: 100%;
+    gap: 4rem;
+    text-align: left;
+}
+
+.hero-text-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.icon-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .hero-date-location {
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(10px, 1.7vw, 1.6rem);
-    text-align: right;
+    font-size: clamp(14px, 2.2vw, 1.8rem);
+    text-align: left;
     font-weight: 500;
     line-height: 1.4;
     color: var(--text-light);
@@ -288,25 +312,66 @@ a:hover {
     margin: 0;
 }
 
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(140px, 22vw, 250px);
+    height: clamp(140px, 22vw, 250px);
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.icon-circle:hover {
+    border-color: #ffffff;
+    transform: scale(1.08);
+}
+
 .hero-icon {
-    height: clamp(30px, 8vw, 160px);
-    width: auto;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
 }
 
 .hero-section h1.hero-title {
+    font-family: 'Montserrat', sans-serif;
     color: var(--text-light);
-    font-size: clamp(15px, 3.8vw, 3.5rem);
-    white-space: nowrap;
+    font-size: clamp(24px, 4.5vw, 3.8rem);
     font-weight: 800;
     margin: 0;
-    letter-spacing: -0.5px;
-    line-height: 1.2;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    white-space: normal;
 }
 
-.hero-content .cta-button {
-    margin-top: 3rem;
+.hero-section h1.hero-title .font-light {
+    font-weight: 300;
+    display: inline-block;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: var(--transition);
+    text-align: center;
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background-color: #0081d5;
 }
 
 .hero-section .subtitle {
@@ -582,7 +647,7 @@ section {
 .footer {
     background-color: var(--primary-color);
     color: var(--text-light);
-    padding: 4rem 0 2rem 0;
+    padding: 1.5rem 0 1rem 0;
 }
 
 .footer-content {
@@ -668,22 +733,35 @@ section {
     
     .section-title { font-size: 2rem; }
 
-    /* Hero: mantener layout de desktop pero reducido proporcionalmente */
-    .hero-content {
+    /* Hero: layout dividido apilado en móvil */
+    .hero-section {
+        background: linear-gradient(180deg, #0A192F 0%, #10213A 100%);
+    }
+
+    .hero-content.split-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
         padding: 0 12px;
     }
 
-    .hero-icon {
-        height: clamp(20px, 7vw, 80px);
+    .hero-text-side {
+        align-items: center;
     }
 
-    .hero-icons {
-        gap: 0.3rem;
-        margin: 0.4rem 0;
+    .icon-grid-2x2 {
+        gap: 1.5rem;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero-icon {
+        height: clamp(50px, 15vw, 120px);
     }
 
     .hero-date-location {
-        font-size: clamp(8px, 2.2vw, 1rem);
+        text-align: center;
+        font-size: clamp(12px, 3.5vw, 1.2rem);
     }
 
     .footer-content {
@@ -696,16 +774,13 @@ section {
 /* Pantallas muy chicas (menos de 380px) */
 @media (max-width: 380px) {
     .hero-section h1.hero-title {
-        font-size: 14px;
+        font-size: 24px;
         letter-spacing: -0.5px;
     }
     .hero-icon {
-        height: 18px;
-    }
-    .hero-icons {
-        gap: 0.2rem;
+        height: clamp(40px, 12vw, 80px);
     }
     .hero-date-location {
-        font-size: 7px;
+        font-size: 11px;
     }
 }

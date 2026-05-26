@@ -784,3 +784,78 @@ section {
         font-size: 11px;
     }
 }
+
+/* Banner Institucional (Organizan y Auspician) */
+.institutional-banner {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(9, 30, 66, 0.08);
+}
+
+.banner-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.logos-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+}
+
+.logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: 200px;
+    transition: var(--transition);
+}
+
+.logo-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.logo-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Responsividad para el banner */
+@media (max-width: 768px) {
+    .institutional-banner {
+        padding: 2rem 0;
+    }
+    .banner-title {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    .logos-grid {
+        gap: 2.5rem;
+    }
+    .logo-item {
+        height: 65px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-title {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .logos-grid {
+        gap: 1.8rem;
+    }
+    .logo-item {
+        height: 55px;
+        width: 120px;
+    }
+}

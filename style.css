@@ -488,6 +488,14 @@ section {
     font-size: 0.95rem;
 }
 
+.program-link-card {
+    grid-column: span 2;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Docentes */
 .teachers-grid {
     display: grid;

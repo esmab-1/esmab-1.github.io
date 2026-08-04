@@ -810,10 +810,18 @@ section {
 
 .logos-grid {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.logos-row {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 4.5rem;
+    width: 100%;
 }
 
 .logo-item {
@@ -823,6 +831,11 @@ section {
     height: 85px;
     width: 200px;
     transition: var(--transition);
+}
+
+.logo-claf {
+    height: 98px;
+    width: 230px;
 }
 
 .logo-item img {
@@ -846,11 +859,18 @@ section {
         margin-bottom: 1.5rem;
     }
     .logos-grid {
+        gap: 2rem;
+    }
+    .logos-row {
         gap: 2.5rem;
     }
     .logo-item {
         height: 65px;
         width: 150px;
+    }
+    .logo-claf {
+        height: 75px;
+        width: 173px;
     }
 }
 
@@ -860,10 +880,17 @@ section {
         letter-spacing: 1px;
     }
     .logos-grid {
+        gap: 1.5rem;
+    }
+    .logos-row {
         gap: 1.8rem;
     }
     .logo-item {
         height: 55px;
         width: 120px;
+    }
+    .logo-claf {
+        height: 63px;
+        width: 138px;
     }
 }
